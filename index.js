@@ -1,5 +1,19 @@
 function hasTargetSum(array, target) {
+   for (let i = 0; i < array.length; i++) {
+     const element = target-array[i];
+   for (let j = i+1; j < array.length; j++) {
+   if (element===array[j]) {
+     return  true
+   }
+    
+  }
+     
+   }
+  return false
+  
+  
   // Write your algorithm here
+
 }
 
 /* 
@@ -8,6 +22,10 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  the inputs are array and the target value, 
+  the inputs should be able to add  up to the target value
+  if the inputs add up to the target return true
+  else return false 
 */
 
 /*
